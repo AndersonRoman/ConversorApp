@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 if (eDolares.getText().toString().equals("") && ePesos.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(),"Digite un valor a convertir", Toast.LENGTH_SHORT).show();
                 }
+                if (!(eDolares.getText().toString().isEmpty() && ePesos.getText().toString().isEmpty())){
+                    Toast.makeText(getApplicationContext(),"Solo uno de los campos debe estar lleno", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
